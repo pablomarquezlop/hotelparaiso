@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Hoteles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/catalogo.css">
+    <link rel="stylesheet" href="../CSS/cookies.css">
+</head>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+              <img src="../IMGS/logo.png" alt="logo hotel paraíso" width="125px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"><img src="../IMGS/icons8-casa-24.png" alt="house icon" class="icono">  Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../HTML/introduccion.html"><img src="../IMGS/icons8-información-24.png" alt="icono info" class="icono"> ¿Quiénes Somos?</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="../HTML/catalogo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../IMGS/icons8-marcador-24.png" alt="icono ubicacion" class="icono"> Nuestros Hoteles</a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="../HTML/catalogo.html">TODOS NUESTROS HOTELES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../HTML/maldivas.html">MALDIVAS</a></li>
+                  <li><a class="dropdown-item" href="../HTML/rivieramaya.html">RIVIERA MAYA</a></li>
+                  <li><a class="dropdown-item" href="../HTML/puntacana.html">PUNTA CANA</a></li>
+                  <li><a class="dropdown-item" href="../HTML/seychelles.html">SEYCHELLES</a></li>
+                  <li><a class="dropdown-item" href="../HTML/caboverde.html">CABO VERDE</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../HTML/contacto.html"><img src="../IMGS/icons8-tarjeta-de-contacto-24.png" alt="icon contacto" class="icono">  Contacto</a>
+              </li>
+              </ul>
+          </div>
+          </div>
+      </nav>
+  </header>
+
+  <div id="overlay"></div>
+  <div id="barraaceptacion">
+    Esta página utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra política de cookies.
+    <button onclick="ponerCookie()">Aceptar</button>
+  </div>
+
+  <h1 class="title">nuestros hoteles</h1>
+  <h3 class="subtitle">¿Preparado para vivir una experiencia única...?</h3>
+
+  <div class="gallery-container" id="gallery-container-1">
+      <div class="gallery">
+      <img src="../IMGS/foto1.jpg" alt="Imagen 1" class="gallery-img">
+      <img src="../IMGS/foto2.webp" alt="Imagen 2" class="gallery-img">
+      <img src="../IMGS/foto3.jpg" alt="Imagen 3" class="gallery-img">
+      <img src="../IMGS/foto4.jpg" alt="Imagen 4" class="gallery-img">
+      <img src="../IMGS/foto5.jpg" alt="Imagen 5" class="gallery-img">
+      <img src="../IMGS/foto6.webp" alt="Imagen 6" class="gallery-img">
+      <img src="../IMGS/foto7.jpg" alt="Imagen 7" class="gallery-img">
+      <img src="../IMGS/foto8.webp" alt="Imagen 8" class="gallery-img">
+      <img src="../IMGS/foto9.jpg" alt="Imagen 9" class="gallery-img">
+      <img src="../IMGS/foto10.jpg" alt="Imagen 10" class="gallery-img">
+      <img src="../IMGS/foto21.webp" alt="Imagen 11" class="gallery-img">
+      <img src="../IMGS/foto22.jpg" alt="Imagen 12" class="gallery-img">
+      <img src="../IMGS/foto23.jpg" alt="Imagen 13" class="gallery-img">
+      <img src="../IMGS/foto24.jpg" alt="Imagen 14" class="gallery-img">
+      <img src="../IMGS/foto25.webp" alt="Imagen 15" class="gallery-img">
+      <img src="../IMGS/foto26.jpg" alt="Imagen 16" class="gallery-img">
+      <img src="../IMGS/foto27.jpg" alt="Imagen 17" class="gallery-img">
+      <img src="../IMGS/foto28.jpg" alt="Imagen 18" class="gallery-img">
+      <img src="../IMGS/foto29.jpg" alt="Imagen 19" class="gallery-img">
+      <img src="../IMGS/foto30.jpg" alt="Imagen 20" class="gallery-img">
+      </div>
+  </div>
+
+  <div class="gallery-container" id="gallery-container-2">
+      <div class="gallery">
+      <img src="../IMGS/foto11.jpg" alt="Imagen 11" class="gallery-img">
+      <img src="../IMGS/foto12.webp" alt="Imagen 12" class="gallery-img">
+      <img src="../IMGS/foto13.jpg" alt="Imagen 13" class="gallery-img">
+      <img src="../IMGS/foto14.jpg" alt="Imagen 14" class="gallery-img">
+      <img src="../IMGS/foto15.jpg" alt="Imagen 15" class="gallery-img">
+      <img src="../IMGS/foto16.jpg" alt="Imagen 16" class="gallery-img">
+      <img src="../IMGS/foto17.webp" alt="Imagen 17" class="gallery-img">
+      <img src="../IMGS/foto18.jpg" alt="Imagen 18" class="gallery-img">
+      <img src="../IMGS/foto19.jpg" alt="Imagen 19" class="gallery-img">
+      <img src="../IMGS/foto20.jpg" alt="Imagen 20" class="gallery-img">
+      <img src="../IMGS/foto31.jpg" alt="Imagen 11" class="gallery-img">
+      <img src="../IMGS/foto32.jpg" alt="Imagen 12" class="gallery-img">
+      <img src="../IMGS/foto33.jpg" alt="Imagen 13" class="gallery-img">
+      <img src="../IMGS/foto34.jpg" alt="Imagen 14" class="gallery-img">
+      <img src="../IMGS/foto35.avif" alt="Imagen 15" class="gallery-img">
+      <img src="../IMGS/foto36.jpeg" alt="Imagen 16" class="gallery-img">
+      <img src="../IMGS/foto37.jpg" alt="Imagen 17" class="gallery-img">
+      <img src="../IMGS/foto38.jpg" alt="Imagen 18" class="gallery-img">
+      <img src="../IMGS/foto39.jpg" alt="Imagen 19" class="gallery-img">
+      <img src="../IMGS/foto40.jpeg" alt="Imagen 20" class="gallery-img">
+      </div>
+  </div>
+
+  <div class="gallery-container" id="gallery-container-3">
+      <div class="gallery">
+      <img src="../IMGS/foto21.webp" alt="Imagen 11" class="gallery-img">
+      <img src="../IMGS/foto22.jpg" alt="Imagen 12" class="gallery-img">
+      <img src="../IMGS/foto23.jpg" alt="Imagen 13" class="gallery-img">
+      <img src="../IMGS/foto24.jpg" alt="Imagen 14" class="gallery-img">
+      <img src="../IMGS/foto25.webp" alt="Imagen 15" class="gallery-img">
+      <img src="../IMGS/foto26.jpg" alt="Imagen 16" class="gallery-img">
+      <img src="../IMGS/foto27.jpg" alt="Imagen 17" class="gallery-img">
+      <img src="../IMGS/foto28.jpg" alt="Imagen 18" class="gallery-img">
+      <img src="../IMGS/foto29.jpg" alt="Imagen 19" class="gallery-img">
+      <img src="../IMGS/foto30.jpg" alt="Imagen 20" class="gallery-img">
+      <img src="../IMGS/foto11.jpg" alt="Imagen 11" class="gallery-img">
+      <img src="../IMGS/foto12.webp" alt="Imagen 12" class="gallery-img">
+      <img src="../IMGS/foto13.jpg" alt="Imagen 13" class="gallery-img">
+      <img src="../IMGS/foto14.jpg" alt="Imagen 14" class="gallery-img">
+      <img src="../IMGS/foto15.jpg" alt="Imagen 15" class="gallery-img">
+      <img src="../IMGS/foto16.jpg" alt="Imagen 16" class="gallery-img">
+      <img src="../IMGS/foto17.webp" alt="Imagen 17" class="gallery-img">
+      <img src="../IMGS/foto18.jpg" alt="Imagen 18" class="gallery-img">
+      <img src="../IMGS/foto19.jpg" alt="Imagen 19" class="gallery-img">
+      <img src="../IMGS/foto20.jpg" alt="Imagen 20" class="gallery-img">
+      </div>
+  </div>
+
+  <div class="gallery-container" id="gallery-container-4">
+      <div class="gallery">
+      <img src="../IMGS/foto31.jpg" alt="Imagen 11" class="gallery-img">
+      <img src="../IMGS/foto32.jpg" alt="Imagen 12" class="gallery-img">
+      <img src="../IMGS/foto33.jpg" alt="Imagen 13" class="gallery-img">
+      <img src="../IMGS/foto34.jpg" alt="Imagen 14" class="gallery-img">
+      <img src="../IMGS/foto35.avif" alt="Imagen 15" class="gallery-img">
+      <img src="../IMGS/foto36.jpeg" alt="Imagen 16" class="gallery-img">
+      <img src="../IMGS/foto37.jpg" alt="Imagen 17" class="gallery-img">
+      <img src="../IMGS/foto38.jpg" alt="Imagen 18" class="gallery-img">
+      <img src="../IMGS/foto39.jpg" alt="Imagen 19" class="gallery-img">
+      <img src="../IMGS/foto40.jpeg" alt="Imagen 20" class="gallery-img">
+      <img src="../IMGS/foto1.jpg" alt="Imagen 1" class="gallery-img">
+      <img src="../IMGS/foto2.webp" alt="Imagen 2" class="gallery-img">
+      <img src="../IMGS/foto3.jpg" alt="Imagen 3" class="gallery-img">
+      <img src="../IMGS/foto4.jpg" alt="Imagen 4" class="gallery-img">
+      <img src="../IMGS/foto5.jpg" alt="Imagen 5" class="gallery-img">
+      <img src="../IMGS/foto6.webp" alt="Imagen 6" class="gallery-img">
+      <img src="../IMGS/foto7.jpg" alt="Imagen 7" class="gallery-img">
+      <img src="../IMGS/foto8.webp" alt="Imagen 8" class="gallery-img">
+      <img src="../IMGS/foto9.jpg" alt="Imagen 9" class="gallery-img">
+      <img src="../IMGS/foto10.jpg" alt="Imagen 10" class="gallery-img">
+      </div>
+  </div>
+
+
+  <h1>Catálogo de Hoteles</h1>
+
+  <div class="catalog-container">
+    <div class="hotel-card">
+      <div class="image-container">
+        <img src="../IMGS/foto27.jpg" alt="Imagen 1">
+        <img src="../IMGS/foto32.jpg" alt="Imagen 2">
+        <img src="../IMGS/foto21.webp" alt="Imagen 3">
+        <img src="../IMGS/foto22.jpg" alt="Imagen 4">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-title">Hotel Paraíso del Índico</h2>
+        <p class="hotel-description">Descubre el paraíso en nuestro exclusivo hotel en Maldivas, donde el lujo y la naturaleza se encuentran. Relájate en villas sobre el agua con vistas al océano, disfruta de cenas románticas en la playa y explora arrecifes de coral llenos de vida. Un lugar único para desconectar y vivir momentos inolvidables.</p>
+        <p class="hotel-price">Desde $500/noche</p>
+        <div class="buttons-container">
+          <a href="maldivas.html"><button class="btn-more-info">Más Información</button></a>
+          <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="hotel-card">
+      <div class="image-container">
+        <img src="../IMGS/foto35.avif" alt="Imagen 5">
+        <img src="../IMGS/foto31.jpg" alt="Imagen 6">
+        <img src="../IMGS/foto11.jpg" alt="Imagen 7">
+        <img src="../IMGS/foto16.jpg" alt="Imagen 8">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-title">Hotel paraíso maya</h2>
+        <p class="hotel-description">Nuestro hotel de lujo ofrece suites exclusivas con vistas al Caribe, una exquisita gastronomía y servicios personalizados que redefinen el confort. Relájate en playas privadas y vive experiencias únicas en el corazón de la Riviera Maya, donde cada momento es un sueño hecho realidad.</p>
+        <p class="hotel-price">Desde $350/noche</p>
+        <div class="buttons-container">
+          <a href="rivieramaya.html"><button class="btn-more-info">Más Información</button></a>
+          <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <div class="image-container">
+        <img src="../IMGS/foto38.jpg" alt="Imagen 9">
+        <img src="../IMGS/foto40.jpeg" alt="Imagen 10">
+        <img src="../IMGS/foto23.jpg" alt="Imagen 11">
+        <img src="../IMGS/foto24.jpg" alt="Imagen 12">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-title">hotel Paraíso del Caribe</h2>
+        <p class="hotel-description">Bienvenido a un paraíso donde el mar turquesa, las playas de arena blanca y el lujo se unen para crear una experiencia inolvidable. Desde días tranquilos bajo el sol hasta experiencias únicas en el corazón del Caribe, cada momento aquí está diseñado para brindarte recuerdos inolvidables. Vive Punta Cana como nunca antes.</p>
+        <p class="hotel-price">Desde $300/noche</p>
+        <div class="buttons-container">
+          <a href="puntacana.html"><button class="btn-more-info">Más Información</button></a>
+          <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <div class="image-container">
+        <img src="../IMGS/foto12.webp" alt="Imagen 9">
+        <img src="../IMGS/foto5.jpg" alt="Imagen 10">
+        <img src="../IMGS/foto7.jpg" alt="Imagen 11">
+        <img src="../IMGS/foto39.jpg" alt="Imagen 12">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-title">hotel paraíso áfrica este</h2>
+        <p class="hotel-description">Crea recuerdos únicos en este paraíso tropical rodeado de playas de arena blanca, aguas cristalinas y exuberante vegetación donde la tranquilidad y el confort se encuentran. Seychelles te espera para vivir momentos que permanecerán contigo para siempre.</p>
+        <p class="hotel-price">Desde $450/noche</p>
+        <div class="buttons-container">
+          <a href="seychelles.html"><button class="btn-more-info">Más Información</button></a>
+          <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <div class="image-container">
+        <img src="../IMGS/foto8.webp" alt="Imagen 9">
+        <img src="../IMGS/foto36.jpeg" alt="Imagen 10">
+        <img src="../IMGS/foto10.jpg" alt="Imagen 11">
+        <img src="../IMGS/foto37.jpg" alt="Imagen 12">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-title">hotel Paraíso áfrica oeste</h2>
+        <p class="hotel-description">Un destino donde las playas doradas, el agua cristalina y la cultura vibrante se combinan para ofrecerte una experiencia única. Explora sus impresionantes paisajes, disfruta de su rica herencia y déjate cautivar por la calidez de su gente. En Cabo Verde, cada momento se convierte en un recuerdo inolvidable.</p>
+        <p class="hotel-price">Desde $400/noche</p>
+        <div class="buttons-container">
+          <a href="caboverde.html"><button class="btn-more-info">Más Información</button></a>
+          <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../IMGS/logo.png" alt="Logo" width="150">
+      </div>
+      <div class="footer-links">
+        <a href="../HTML/introduccion.html">¿Quiénes Somos?</a> | 
+        <a href="../HTML/catalogo.html">Nuestros Hoteles</a> |
+        <a href="../HTML/contacto.html">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2024 Hoteles Paraíso. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+    
+  <script src="../JS/cookies.js"></script>  
+  <script src="../JS/catalogo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

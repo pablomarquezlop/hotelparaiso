@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes Somos?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/introducción.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/cookies.css">
+</head>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../IMGS/logo.png" alt="logo hotel paraíso" width="125px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html"><img src="../IMGS/icons8-casa-24.png" alt="house icon" class="icono">  Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../HTML/introduccion.html"><img src="../IMGS/icons8-información-24.png" alt="icono info" class="icono"> ¿Quiénes Somos?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../IMGS/icons8-marcador-24.png" alt="icono ubicacion" class="icono"> Nuestros Hoteles</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../HTML/catalogo.html">TODOS NUESTROS HOTELES</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../HTML/maldivas.html">MALDIVAS</a></li>
+                    <li><a class="dropdown-item" href="../HTML/rivieramaya.html">RIVIERA MAYA</a></li>
+                    <li><a class="dropdown-item" href="../HTML/puntacana.html">PUNTA CANA</a></li>
+                    <li><a class="dropdown-item" href="../HTML/seychelles.html">SEYCHELLES</a></li>
+                    <li><a class="dropdown-item" href="../HTML/caboverde.html">CABO VERDE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/contacto.html"><img src="../IMGS/icons8-tarjeta-de-contacto-24.png" alt="icon contacto" class="icono">  Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="overlay"></div>
+    <div id="barraaceptacion">
+        Esta página utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra política de cookies.
+        <button onclick="ponerCookie()">Aceptar</button>
+    </div>
+
+    <section class="history">
+        <h2 class="history-title">¿Quiénes Somos?</h2>
+        <div class="history-content">
+            <div class="history-text">
+                <p><strong>Todo comenzó con un sueño:</strong> crear lugares donde el lujo y la naturaleza coexistan en perfecta armonía. Desde nuestro primer hotel, en un rincón paradisíaco del Caribe, entendimos que el verdadero lujo no es solo comodidad, sino también conexión: con las personas, con el entorno y con uno mismo.</p>
+                <p>En estos más de 30 años, hemos transformado esa visión inicial en una realidad que abarca <strong>destinos icónicos</strong> alrededor del mundo. Cada uno de nuestros hoteles cuenta una historia única, reflejando la cultura y la belleza natural del lugar que lo acoge.</p>
+            </div>
+            <div class="history-image-container">
+                <img src="../IMGS/primerhotel.webp" alt="Primer hotel de la cadena">
+                <p class="history-image-text">Nuestro primer hotel en el corazón del Caribe, un símbolo de lujo y naturaleza.</p>
+            </div>
+            <div class="history-text">
+                <p>Nuestro compromiso con la sostenibilidad y la hospitalidad ha sido reconocido globalmente, logrando premios que nos posicionan entre las mejores cadenas hoteleras del mundo. Pero, más allá de los galardones, lo que más valoramos son los recuerdos que ayudamos a crear para cada uno de nuestros huéspedes.</p>
+            </div>
+            <div class="history-image-container">
+                <img src="../IMGS/trofeos.jpg" alt="Hotel de lujo en la Riviera Maya">
+                <p class="history-image-text">Cada hotel es un refugio único donde el lujo se encuentra con la naturaleza.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../IMGS/foto32.jpg" class="d-block w-100 imagen-carr-1" alt="...">
+            <div class="carousel-caption">
+              <h5>VILLA FLOTANTE EN MALDIVAS</h5>
+              <p>Disfruta de unas vistas imprsionantes al oceano indico desde la privacidad de tu propia villa</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../IMGS/foto13.jpg" class="d-block w-100 imagen-carr-2" alt="...">
+            <div class="carousel-caption">
+              <h5>Comunidad de villas en Seychelles</h5>
+              <p>Comparte una experiencia única con tus seres queridos desde la comodidad de una villa privada</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../IMGS/foto27.jpg" class="d-block w-100 imagen-carr-3" alt="...">
+            <div class="carousel-caption">
+              <h5>Pasarela y comedor flotante en punta cana</h5>
+              <p>Gastronomía gourmet de clase mundial con impresionantes vistas al Mar Caribe</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <section class="destinations">
+        <h3 class="sub-title">Explora Nuestros Destinos</h3>
+
+        
+        <section class="destination">
+            <h3 class="destination-title">Maldivas</h3>
+            <div class="content">
+                <div class="video-container">
+                    <video autoplay muted loop src="../VIDS/Maldivas.mp4" controls></video>
+                </div>
+                <div class="video-info">
+                    <p>Las Maldivas son un paraíso tropical ubicado en el océano Índico, conocido por sus impresionantes aguas cristalinas, playas de arena blanca y una exuberante vida marina. Ideal para una escapada de lujo o un viaje de luna de miel.</p>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img src="../IMGS/maldivas1.webp" alt="Maldivas 1">
+                <img src="../IMGS/maldivas2.jpg" alt="Maldivas 2">
+                <img src="../IMGS/maldivas3.jpg" alt="Maldivas 3">
+                <img src="../IMGS/maldivas4.jpg" alt="Maldivas 4">
+            </div>
+            
+            <div class="buttons-container">
+                <a href="maldivas.html"><button class="btn-more-info">Más Información</button></a>
+                <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+            </div>
+        </section>
+
+        
+        <section class="destination">
+            <h3 class="destination-title">Riviera Maya</h3>
+            <div class="content">
+                <div class="video-container">
+                    <video autoplay muted loop src="../VIDS/Riviera_Maya.mp4" controls></video>
+                </div>
+                <div class="video-info">
+                    <p>La Riviera Maya es famosa por su belleza natural, playas caribeñas, ruinas mayas y parques ecológicos. Es el destino perfecto para los amantes de la cultura, la historia y el ecoturismo.</p>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img src="../IMGS/rivieramaya1.webp" alt="Riviera Maya 1">
+                <img src="../IMGS/rivieramaya2.webp" alt="Riviera Maya 2">
+                <img src="../IMGS/rivieramaya3.jpg" alt="Riviera Maya 3">
+                <img src="../IMGS/rivieramaya4.jpg" alt="Riviera Maya 4">
+            </div>
+            
+            <div class="buttons-container">
+                <a href="rivieramaya.html"><button class="btn-more-info">Más Información</button></a>
+                <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+            </div>
+        </section>
+
+        
+        <section class="destination">
+            <h3 class="destination-title">Punta Cana</h3>
+            <div class="content">
+                <div class="video-container">
+                    <video autoplay loop muted src="../VIDS/Punta_Cana.mp4" controls></video>
+                </div>
+                <div class="video-info">
+                    <p>Punta Cana es conocida por sus hermosas playas y su ambiente relajado. Es el lugar ideal para disfrutar de resorts de lujo, deportes acuáticos y una vibrante vida nocturna.</p>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img src="../IMGS/puntacana1.avif" alt="Punta Cana 1">
+                <img src="../IMGS/puntacana2.webp" alt="Punta Cana 2">
+                <img src="../IMGS/puntacana3.webp" alt="Punta Cana 3">
+                <img src="../IMGS/puntacana4.jpg" alt="Punta Cana 4">
+            </div>
+            
+            <div class="buttons-container">
+                <a href="puntacana.html"><button class="btn-more-info">Más Información</button></a>
+                <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+            </div>
+        </section>
+
+        
+        <section class="destination">
+            <h3 class="destination-title">Seychelles</h3>
+            <div class="content">
+                <div class="video-container">
+                    <video autoplay loop muted src="../VIDS/Seychelles.mp4" controls></video>
+                </div>
+                <div class="video-info">
+                    <p>Seychelles es un archipiélago en el océano Índico, famoso por sus playas vírgenes, aguas turquesas y biodiversidad. Es el destino ideal para los que buscan relajación, aventura y exploración de la naturaleza.</p>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img src="../IMGS/seychelles1.jpg" alt="Seychelles 1">
+                <img src="../IMGS/seychelles2.png" alt="Seychelles 2">
+                <img src="../IMGS/seychelles3.jpg" alt="Seychelles 3">
+                <img src="../IMGS/seychelles4.jpeg" alt="Seychelles 4">
+            </div>
+            
+            <div class="buttons-container">
+                <a href="seychelles.html"><button class="btn-more-info">Más Información</button></a>
+                <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+            </div>
+        </section>
+
+        
+        <section class="destination">
+            <h3 class="destination-title">Cabo Verde</h3>
+            <div class="content">
+                <div class="video-container">
+                    <video autoplay muted loop src="../VIDS/Cabo_Verde.mp4" controls></video>
+                </div>
+                <div class="video-info">
+                    <p>Cabo Verde es un archipiélago africano con paisajes volcánicos, playas doradas y una rica cultura criolla. Es perfecto para los que buscan aventura, cultura y un destino único lejos de las rutas turísticas tradicionales.</p>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img src="../IMGS/caboverde1.webp" alt="Cabo Verde 1">
+                <img src="../IMGS/caboverde2.jpg" alt="Cabo Verde 2">
+                <img src="../IMGS/caboverde3.jpeg" alt="Cabo Verde 3">
+                <img src="../IMGS/caboverde4.jpeg" alt="Cabo Verde 4">
+            </div>
+            
+            <div class="buttons-container">
+                <a href="caboverde.html"><button class="btn-more-info">Más Información</button></a>
+                <a href="contacto.html"><button class="btn-book-now">Reservar Ahora</button></a>
+            </div>
+        </section>
+    </section>
+
+
+
+    <div class="banner" id="responsiveBanner">
+        <div class="banner-content">
+            <div class="banner-image">
+                <img src="../IMGS/banner.jpg" alt="Oferta exclusiva">
+            </div>
+            <div class="banner-text">
+                <button class="banner-close" onclick="hideBanner()">X</button>
+                <h1 class="banner-title">OFERTA EXCLUSIVA LUNA DE MIEL</h1>
+                <p>¡25% de descuento en todas las estancias de más de 5 noches para recién casados!</p>
+                <a href="contacto.html"><button class="banner-button">Reservar Ahora</button></a>
+            </div>
+        </div>
+    </div>
+    
+  
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="../IMGS/logo.png" alt="Logo" width="150">
+          </div>
+          <div class="footer-links">
+            <a href="../HTML/introduccion.html">¿Quiénes Somos?</a> | 
+            <a href="../HTML/catalogo.html">Nuestros Hoteles</a> |
+            <a href="../HTML/contacto.html">Contacto</a>
+          </div>
+          <p class="footer-copy">© 2024 Hoteles Paraíso. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/cookies.js"></script>
+    <script src="../JS/banner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
