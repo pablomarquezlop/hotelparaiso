@@ -1,0 +1,404 @@
+/* ----------------- NAVBAR ---------------- */
+header {
+    padding: 50px 5%;
+}
+
+nav {
+    background-color: hsl(43, 61%, 90%)
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.dropdown-item.active {
+  background-color: rgba(100, 64, 9, 0.7);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(135, 76, 9, 0.5);
+}
+
+.header_intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 3rem;
+    
+  }
+
+li {
+    transition: all;
+}
+
+a {
+    font-family: Georgia, serif;
+}
+
+a:hover {
+    transition: 1s;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    background-color: hsl(43, 61%, 90%);
+    border-radius: 5px;
+    padding: 10px 0;
+    border: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icono {
+    margin-top: -7px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+  }
+  
+
+
+
+
+
+
+/* ----------------- PARALLAX ---------------- */
+.parallax {
+  height: 800px; 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  padding-bottom: 15rem;
+}
+
+
+
+
+
+
+
+
+/* ----------------- SECCION 1 (CUADRO DE TEXTO) ---------------- */
+.parallax-content {
+  max-width: 90%;
+  width: 600px; 
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.75); 
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+}
+
+
+.parallax-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.8px;
+  color: #34495e; 
+  border-bottom: 2px solid #bdc3c7;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+
+.parallax-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #363838;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .parallax-content {
+    width: 85%; 
+    padding: 1.5rem; 
+  }
+
+  .parallax-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .parallax-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .parallax-content {
+    width: 80%;
+  }
+
+  .parallax-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .parallax-content p {
+    font-size: 1.1rem; 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .parallax-content {
+    width: 60% 
+  }
+
+  .parallax-content h2 {
+    font-size: 2.5rem; 
+  }
+
+  .parallax-content p {
+    font-size: 1.3rem; 
+  }
+}
+
+
+
+
+/* ----------------- SECCION 2 (OFERTAS) ---------------- */
+
+
+.special-offers {
+  background-color: hsl(42, 36%, 74%);
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: #3a210c;
+}
+
+.offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 700; 
+  color: #3e2a47; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #8b5e3c, #c49a6c); 
+}
+
+.section-title:hover {
+  color: #b56e3b; 
+  transition: color 0.3s ease;
+}
+
+
+
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+
+.offer-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.offer-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.offer-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.offer-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #7a420e;
+  font-weight: bold;
+}
+
+.offer-details p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7a420e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #bd6929;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* ----------------- SECCION 3 (CARRUSEL RESEÑAS) ---------------- */
+.parallax-section-3 {
+  position: relative;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 30px;
+  border-radius: 15px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+  max-width: 900px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.testimonial-rating {
+  font-size: 1.4rem;
+  color: #f1c40f; 
+}
+
+.star-rating i {
+  margin-right: 5px;
+}
+
+.carousel-inner {
+  padding: 40px;
+}
+
+
+
+
+/* ----------------- FOOTER ---------------- */
+.footer {
+  background: linear-gradient(to bottom, #0d1117, #161b22);
+  color: #d4d4d4;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #d4d4d4;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #888;
+}

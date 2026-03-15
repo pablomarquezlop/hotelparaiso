@@ -1,0 +1,192 @@
+
+#reservation {
+    background-color: #f1e8d6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#reservation h2 {
+    font-size: 3rem;
+    color: #6e2c00;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: 'Georgia', serif;
+    position: relative;
+    margin: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #5c4033; 
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #d8b79d;
+    border-radius: 5px;
+    background-color: #fdfbf7;
+    color: #5c4033;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 1px solid #b08968;
+    box-shadow: 0 0 5px rgba(176, 137, 104, 0.5);
+}
+
+/* Clases de error */
+input.error, select.error, textarea.error {
+    border: 2px solid red;
+    background-color: #ffdddd;
+}
+
+button {
+    background-color: #b08968;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8c6a53; 
+}
+
+
+.error {
+    border: 2px solid red;
+    background-color: #ffdddd;
+}
+
+.error:focus {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+#organize-trip {
+    background-color: #f1e8d6;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#organize-trip h3 {
+    font-size: 2rem;
+    color: #6e2c00;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#organize-trip p {
+    font-size: 1.2rem;
+    color: #5c4033;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: #f1e8d6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+.image-container {
+    width: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.mi-info {
+    text-align: center;
+    width: 60%;
+    text-align: left;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    color: #6e2c00;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+    color: #5c4033;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    #reservation h2 {
+        font-size: 2rem;
+    }
+
+    #organize-trip h3 {
+        font-size: 1.5rem;
+    }
+    
+    .descripcion {
+        font-size: 0.8rem;
+    }
+}
+
