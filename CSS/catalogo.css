@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
   h1 {
     font-size: 3rem;
@@ -15,7 +15,7 @@
     position: relative;
     margin: 50px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
+  }
 
 .subtitle {
   font-family: 'Georgia', serif;
@@ -87,13 +87,13 @@
   .hotel-card {
     display: flex;
     align-items: center;
-    width: 70vw;
-    margin-left: 15%;
-    height: 500px;
-    margin-bottom: 50px;
+    width: min(1100px, 90vw);
+    margin: 0 auto 50px auto;
+    min-height: 500px;
     background: linear-gradient(to right, #D2B48C, #A67B5B);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 18px;
+    overflow: hidden;
   }
 
 
@@ -232,13 +232,6 @@
 
   .hotel-card {
     height: 400px;
-  }
-}
-
-@media (min-width: 394px) and (max-width: 1000px) {
-  .catalog-container {
-    margin-left: 3%;
-    width: 10%;
   }
 }
 
